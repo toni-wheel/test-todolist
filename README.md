@@ -1,5 +1,36 @@
-# Vue 3 + Vite
+# Task List (Vue + Pinia)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Простой список задач на Vue 3 с сохранением состояния в `localStorage`. Использует Pinia для хранения данных.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Запуск проекта
+
+1. Установка зависимостей:
+
+```bash
+npm install
+```
+
+2. Запуск локального сервера для разработки:
+
+```bash
+npm run dev
+```
+
+3. Сборка проекта:
+
+```bash
+npm run build
+```
+
+Собранные файлы будут находиться в папке `dist/`.
+
+## Размещение на хостинге
+
+Сборка — это обычный HTML/JS/CSS. Можно загрузить содержимое папки `dist` на любой статический хостинг (GitHub Pages, Vercel, Netlify, FTP и т.п.).
+
+**Точка входа:** `index.html`
+
+## Дополнительно
+
+- При первом запуске загружаются задачи из `public/tasks.json`, затем изменения сохраняются в `localStorage`.
+- Иконка галочки (`check.svg`) лежит в `public/images/svg/`.
